@@ -11,7 +11,7 @@ __Discord:__ Pavieł #3730
 ## About me
 My goal is to become a front-end developer and achieve a high professional level.
 
-My pursuit to learn *new knowledge.* 
+I pursuit to learn *new knowledge* and *information*. 
 
 ## Skills
 1. HTML, CSS.
@@ -20,7 +20,7 @@ My pursuit to learn *new knowledge.*
 ## Education
 Hrodna State Agrarian University.
 
-RS-School. Front-end (JavaScript) course.
+__RS-School.__ Front-end (JavaScript) course.
 
 ## English
 *Pre-Intermediate (A2).*
