@@ -54,8 +54,7 @@
             <p class="example">"The_Stealth_Warrior" <span>gets converted to</span> "TheStealthWarrior"</p>
             <br>
             <h3>My solution</h3>
-            <code>
-                <pre>
+            <pre>
 <span>function</span> toCamelCase(str){
 <span>let</span> arr = [];
 <span>if</span> (str.includes('-')) {
@@ -64,7 +63,7 @@ arr = str.split('-');
 arr = str.split('_');
 }
 <span>let</span> newArr = [arr[0]];
-<span>for</span> (let i = 1; i < arr.length; i++) {
+<span>for</span> (let i = 1; i &lt; arr.length; i++) {
 <span>let</span> subArr = arr[i].split('');
 <span>subArr[0]</span> = subArr[0].toUpperCase();
 <span>let</span> subStr = subArr.join('');
@@ -73,7 +72,6 @@ arr = str.split('_');
 <span>let</span> camelStr = newArr.join('');
 <span>return</span> camelStr;
 }</pre>
-            </code>
         </div>
 
         <h2 class="header_h2">Education</h2>

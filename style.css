@@ -99,6 +99,6 @@ pre {
   padding: 20px;
 }
 
-code > pre > span {
+pre > span {
   font-weight: 700;
 }
