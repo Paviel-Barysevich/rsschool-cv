@@ -78,7 +78,8 @@ h3 {
   margin: 0 25px 5px;
 }
 
-.task > span {
+.task > span,
+.italic {
   font-style: italic;
 }
 
@@ -99,6 +100,7 @@ pre {
   padding: 20px;
 }
 
-pre > span {
+pre > span,
+.bold {
   font-weight: 700;
 }
