@@ -15,7 +15,7 @@
                 <img src="images/myPhotoForCV.jpg" alt="Pavel Barysevich-Bleyaniuk's photo for his CV">
             </div>
             <div class="contacts">
-                <p class="contacts_title">My contacts</p>
+                <h2 class="contacts_title">My contacts</h2>
                 <ol class="contacts_list">
                     <li><span>Phone:</span> +375(33)6*****2</li>
                     <li><span>E-mail:</span> pavelmessage@gmail.com</li>
@@ -24,5 +24,73 @@
             </div>
         </div>
     </header>
+    <main>
+        <h2 class="header_h2">About me</h2>
+        <div class="about_me">
+            <p>My goal is to become a front-end developer and achieve a high professional level.</p>
+            <p>I pursuit to learn <span>new knowledge</span> and <span>information</span>.</p>
+        </div>
+
+        <h2 class="header_h2">Skills</h2>
+        <div class="skills">
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </div>
+
+        <h2 class="header_h2">Code example</h2>
+        <div class="code_example">
+            <h3>A task</h3>
+            <p class="task">
+                A task from <a href="https://www.codewars.com/kata/517abf86da9663f1d2000003/javascript" title="click the link to open the kata">codewars.com</a>: <span>Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case). The next words should be always capitalized.</span>
+            </p>
+
+            <h3>Examples</h3>
+            <p class="example">"the-stealth-warrior" <span>gets converted to</span> "theStealthWarrior"</p>
+            <p class="example">"The_Stealth_Warrior" <span>gets converted to</span> "TheStealthWarrior"</p>
+
+            <h3>My solution</h3>
+            <code>
+                <pre>
+                      <span>function</span> toCamelCase(str){
+                      <span>let</span> arr = [];
+                      <span>if</span> (str.includes('-')) {
+                      arr = str.split('-');
+                      } <span>else</span> {
+                      arr = str.split('_');
+                      }
+                      <span>let</span> newArr = [arr[0]];
+                      <span>for</span> (let i = 1; i < arr.length; i++) {
+                      <span>let</span> subArr = arr[i].split('');
+                      <span>subArr[0]</span> = subArr[0].toUpperCase();
+                      <span>let</span> subStr = subArr.join('');
+                      <span>newArr.push(subStr)</span>;
+                      }
+                      <span>let</span> camelStr = newArr.join('');
+                      <span>return</span> camelStr;
+                      }
+                </pre>
+            </code>
+        </div>
+
+        <h2 class="header_h2">Education</h2>
+        <div class="education">
+            <ul>
+                <li>Hrodna State Agrarian University.</li>
+                <li> <a href="https://docs.rs.school/">RS-School</a>. The front-end (JavaScript) course.</li>
+            </ul>
+        </div>
+
+        <h2 class="header_h2">Languages</h2>
+        <div class="language">
+            <ul>
+                <li><span class="bold">English - </span><span class="italic">Pre-Intermediate (A2).</span></li>
+                <li><span class="bold">Russian - </span><span class="italic">Native.</span></li>
+                <li><span class="bold">Belarusian - </span><span class="italic">Intermediate (B1).</span></li>
+            </ul>
+        </div>
+    </main>
 </body>
 </html>
