@@ -14,6 +14,7 @@
             <div>
                 <img src="images/myPhotoForCV.jpg" alt="Pavel Barysevich-Bleyaniuk's photo for his CV">
             </div>
+
             <div class="contacts">
                 <h2 class="contacts_title">My contacts</h2>
                 <ol class="contacts_list">
@@ -46,32 +47,31 @@
             <p class="task">
                 A task from <a href="https://www.codewars.com/kata/517abf86da9663f1d2000003/javascript" title="click the link to open the kata">codewars.com</a>: <span>Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case). The next words should be always capitalized.</span>
             </p>
-
+            <br>
             <h3>Examples</h3>
             <p class="example">"the-stealth-warrior" <span>gets converted to</span> "theStealthWarrior"</p>
             <p class="example">"The_Stealth_Warrior" <span>gets converted to</span> "TheStealthWarrior"</p>
-
+            <br>
             <h3>My solution</h3>
             <code>
                 <pre>
-                      <span>function</span> toCamelCase(str){
-                      <span>let</span> arr = [];
-                      <span>if</span> (str.includes('-')) {
-                      arr = str.split('-');
-                      } <span>else</span> {
-                      arr = str.split('_');
-                      }
-                      <span>let</span> newArr = [arr[0]];
-                      <span>for</span> (let i = 1; i < arr.length; i++) {
-                      <span>let</span> subArr = arr[i].split('');
-                      <span>subArr[0]</span> = subArr[0].toUpperCase();
-                      <span>let</span> subStr = subArr.join('');
-                      <span>newArr.push(subStr)</span>;
-                      }
-                      <span>let</span> camelStr = newArr.join('');
-                      <span>return</span> camelStr;
-                      }
-                </pre>
+<span>function</span> toCamelCase(str){
+<span>let</span> arr = [];
+<span>if</span> (str.includes('-')) {
+arr = str.split('-');
+} <span>else</span> {
+arr = str.split('_');
+}
+<span>let</span> newArr = [arr[0]];
+<span>for</span> (let i = 1; i < arr.length; i++) {
+<span>let</span> subArr = arr[i].split('');
+<span>subArr[0]</span> = subArr[0].toUpperCase();
+<span>let</span> subStr = subArr.join('');
+<span>newArr.push(subStr)</span>;
+}
+<span>let</span> camelStr = newArr.join('');
+<span>return</span> camelStr;
+}</pre>
             </code>
         </div>
 

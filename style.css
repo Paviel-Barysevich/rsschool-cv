@@ -1,6 +1,7 @@
-body {
+html, body {
   padding: 0;
   margin: 0;
+  background: rgb(236, 250, 255);
 }
 
 .full_name {
@@ -14,6 +15,7 @@ body {
 
 .picture_contacts {
   position: relative;
+  height: 247px;
 }
 
 .picture_contacts > div {
@@ -24,16 +26,22 @@ body {
   background: rgb(228, 210, 210);
   position: absolute;
   top: 0;
-  width: 100%;
+  right: 0;
+  left: 147px;
   height: 247px;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .contacts_title, .header_h2 {
   margin: 5px;
+  margin-top: 0;
   padding: 5px 10px;
   font-size: 24px;
   font-weight: 600;
+}
+
+ul, ol {
+  margin-top: 0;
 }
 
 .contacts_list > li {
@@ -45,4 +53,52 @@ body {
 .contacts_list > li > span {
   font-size: 20px;
   font-weight: 600;
+}
+
+main {
+  background: rgb(236, 250, 255);
+  margin: 0;
+  padding: 0;
+}
+
+main > div > p,
+main > div > ol > li,
+main > div > ul > li {
+  margin: 0 10px 5px 20px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about_me > p::first-letter,
+.task::first-letter {
+  margin-left: 15px;
+}
+
+h3 {
+  margin: 0 25px 5px;
+}
+
+.task > span {
+  font-style: italic;
+}
+
+.example {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.example > span {
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+pre {
+  font-size: 18px;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+
+code > pre > span {
+  font-weight: 700;
 }
