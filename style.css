@@ -126,7 +126,7 @@ ul.navigation li a:hover::after {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
+    padding: 5px 5px 0;
 }
 
 #contacts div {
@@ -186,4 +186,19 @@ ul.navigation li a:hover::after {
     #contacts div a span {
         display: none;
     }
+}
+
+/*Add about me*/
+#about {
+    background-color: var(--c-aqua);
+    padding: 10px 10px 0.5px;
+}
+
+#about p {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+#about p::first-letter {
+    margin-left: 20px;
 }
