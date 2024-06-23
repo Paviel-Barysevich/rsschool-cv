@@ -202,3 +202,36 @@ ul.navigation li a:hover::after {
 #about p::first-letter {
     margin-left: 20px;
 }
+
+.skills h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.skills h2 span {
+    display: inline-block;
+}
+
+.skills h2 span::after {
+    content: '';
+    display: block;
+    background-color: azure;
+    height: 3px;
+    width: 100%;
+}
+
+.skills ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.skills ul li {
+    font-size: 1.5em;
+}
+
+.skills ul li::before {
+    content: '\25E6';
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin-right: 5px;
+}
