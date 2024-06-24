@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="container_photo_name">
+        <div class="container-photo-name">
             <div class="photo">
                 <img src="images/pavel_barysevich-bleyaniuk.jpg" alt="photo of Pavel Barysevich-Bleyaniuk">
             </div>
@@ -60,7 +60,7 @@
         </div>
         <div id="about">
             <div>
-                <p class="about_me">I like learning and finding out something new. My goal is to become a software engineer. I want to get new experience in developing software products.</p>
+                <p class="about-me">I like learning and finding out something new. My goal is to become a software engineer. I want to get new experience in developing software products.</p>
             </div>
             <div class="skills">
                 <h2><span>My hard skills:</span></h2>
@@ -70,6 +70,37 @@
                     <li>Git;</li>
                     <li>Dev-tools, Visual Studio Code.</li>
                 </ul>
+            </div>
+        </div>
+        <div id="code">
+            <h2><span>Code example</span></h2>
+            <div class="task">
+                <h3><a href="https://www.codewars.com/kata/5a946d9fba1bb5135100007c">Task :</a></h3>
+                <p><i>Given a List [ ] of n integers , find minimum number to be inserted in a list, so that sum of all elements of list should equal the closest prime number.</i></p>
+            </div>
+            <div class="solution">
+                <h3>Solution:</h3>
+                <div class="code-container">
+                    <code>
+                        <span class="darkblue">function</span> <span class="yellow">minimumNumber</span>(<span class="lightblue">numbers</span>){<br>
+                            <span class="darkblue">let</span> <span class="lightblue">sum</span> = <span class="lightblue">numbers</span>.<span class="yellow">reduce</span>((<span class="lightblue">acc</span>, <span class="lightblue">number</span>) => <span class="lightblue">acc</span> + <span class="lightblue">number</span>, 0);<br>
+                            <span class="darkblue">let</span> <span class="lightblue">isPrime</span> = <span class="lightblue">sum</span>;<br>
+                            <br>
+                                <span class="indent">outer:<br>
+                                        <span class="purple">for</span> (<span class="darkblue">let</span> <span class="lightblue">i</span> = 2; <span class="lightblue">i</span> &lt;= <span class="lightblue">isPrime</span> ** (1 / 2); <span class="lightblue">i</span>++) {<br>
+                                        <span class="purple">if</span> (<span class="lightblue">isPrime</span> % <span class="lightblue">i</span> === 0) {<br>
+                                    <span class="indent"><span class="lightblue">isPrime</span>++;<br>
+                                        <span class="lightblue">i</span> = 1;<br>
+                                        <span class="purple">continue</span> outer;<br>
+                                        } <span class="purple">else</span> {<br>
+                                        <span class="purple">continue</span>;<br>
+                                    }</span><br>
+                                }</span><br>
+                            <br>
+                            <span class="purple">return</span> <span class="lightblue">isPrime</span> - <span class="lightblue">sum</span>;<br>
+                          }<br>
+                    </code>
+                </div>
             </div>
         </div>
     </main>

@@ -1,5 +1,9 @@
 :root {
     --c-aqua: #99fbfb;
+    --c-darkblue: #569cd6;
+    --c-yellow: #dcdc9d;
+    --c-purple: #c586c0;
+    --c-lightblue: #8cdcfe;
 }
 
 * {
@@ -16,7 +20,7 @@ header {
     padding: 10px;
 }
 
-.container_photo_name {
+.container-photo-name {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -92,7 +96,7 @@ ul.navigation li a:hover::after {
         padding: 10px 0 0;
     }
 
-    .container_photo_name,
+    .container-photo-name,
     ul.navigation {
         flex-direction: column;
     }
@@ -194,8 +198,11 @@ ul.navigation li a:hover::after {
     padding: 10px 10px 0.5px;
 }
 
-#about p {
+p {
     font-size: 1.5em;
+}
+
+#about p {
     margin-top: 0;
 }
 
@@ -203,19 +210,19 @@ ul.navigation li a:hover::after {
     margin-left: 20px;
 }
 
-.skills h2 {
+h2 {
     font-size: 2em;
     margin-bottom: 5px;
 }
 
-.skills h2 span {
+h2 span {
     display: inline-block;
 }
 
-.skills h2 span::after {
+h2 span::after {
     content: '';
     display: block;
-    background-color: azure;
+    background-color: gray;
     height: 3px;
     width: 100%;
 }
@@ -234,4 +241,76 @@ ul.navigation li a:hover::after {
     font-size: 1.5em;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+/*Add styles to CODE*/
+#code {
+    padding: 10px 10px 0;
+}
+
+#code h2,
+.task p {
+    margin-top: 0;
+}
+
+#code h3 {
+    font-size: 1.7em;
+    margin: 20px 0 0;
+}
+
+.task h3 a {
+    display: inline-block;
+    padding: 5px 5px 5px 0;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.task h3 a::after {
+    content: url(images/icons/icon_link.png);
+    display: inline-block;
+    height: 30px;
+    vertical-align: bottom;
+}
+
+.task h3 a:hover {
+    background-color: var(--c-aqua);
+}
+
+.task p {
+    background-color: var(--c-yellow);
+    padding: 3px;
+    border-radius: 3px;
+    outline: 1px solid yellow;
+}
+
+.solution .code-container {
+    background-color: #000000;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.solution code {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+span.darkblue {
+    color: var(--c-darkblue);
+}
+
+span.yellow {
+    color: var(--c-yellow);
+}
+
+span.purple {
+    color: var(--c-purple);
+}
+
+span.lightblue {
+    color: var(--c-lightblue);
+}
+
+span.indent {
+    display: inline-block;
+    margin-left: 20px;
 }
