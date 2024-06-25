@@ -293,7 +293,10 @@ h2 span::after {
 .solution .code-container {
     background-color: #000000;
     padding: 20px;
+    border-radius: 10px;
     margin-top: 5px;
+    margin-bottom: 10px;
+    outline: 2px solid #808080;
 }
 
 .solution code {
@@ -359,4 +362,66 @@ span.indent {
     box-shadow: 2px 2px 0 var(--c-lightblue);
 }
 
-/*Add styles to ENGLISH*/
+/*Add styles to FOOTER*/
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 10px 10px;
+}
+
+footer p a {
+    color: #ffffff;
+    padding: 5px;
+}
+
+.rss {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rss p {
+    margin-bottom: 0;
+}
+
+.rss p {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.github::before {
+    content: url(images/icons/icon_github.png);
+    display: inline-block;
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    outline: 3px solid #ffffff;
+    outline-offset: -1px;
+    vertical-align: middle;
+}
+
+.rolling-scope-school::before {
+    content: url(images/icons/favicon_RS.ico);
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 30px;
+    outline: 3px solid #ffffff;
+    outline-offset: -1px;
+    vertical-align: middle;
+}
+
+.rss p:nth-child(2),
+.rss p:nth-child(3) {
+    transition: .3s;
+}
+
+.rss p:nth-child(2):hover,
+.rss p:nth-child(3):hover {
+    border-radius: 5px;
+    outline: 2px solid #ffffff;
+    outline-offset: 5px;
+}
