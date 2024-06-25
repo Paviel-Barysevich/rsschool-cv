@@ -1,5 +1,10 @@
 :root {
     --c-aqua: #99fbfb;
+    --c-azure: #f0ffff;
+    --c-darkblue: #569cd6;
+    --c-yellow: #dcdc9d;
+    --c-purple: #c586c0;
+    --c-lightblue: #8cdcfe;
 }
 
 * {
@@ -12,11 +17,11 @@ body {
 }
 
 header {
-    background-color: azure;
+    background-color: var(--c-azure);
     padding: 10px;
 }
 
-.container_photo_name {
+.container-photo-name {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -92,7 +97,7 @@ ul.navigation li a:hover::after {
         padding: 10px 0 0;
     }
 
-    .container_photo_name,
+    .container-photo-name,
     ul.navigation {
         flex-direction: column;
     }
@@ -138,7 +143,7 @@ ul.navigation li a:hover::after {
 }
 
 #contacts div:hover {
-    background-color: azure;
+    background-color: var(--c-azure);
     box-shadow: 2px 2px 0 var(--c-aqua);
 }
 
@@ -194,8 +199,11 @@ ul.navigation li a:hover::after {
     padding: 10px 10px 0.5px;
 }
 
-#about p {
+p {
     font-size: 1.5em;
+}
+
+#about p {
     margin-top: 0;
 }
 
@@ -203,19 +211,19 @@ ul.navigation li a:hover::after {
     margin-left: 20px;
 }
 
-.skills h2 {
+h2 {
     font-size: 2em;
     margin-bottom: 5px;
 }
 
-.skills h2 span {
+h2 span {
     display: inline-block;
 }
 
-.skills h2 span::after {
+h2 span::after {
     content: '';
     display: block;
-    background-color: azure;
+    background-color: gray;
     height: 3px;
     width: 100%;
 }
@@ -229,9 +237,191 @@ ul.navigation li a:hover::after {
     font-size: 1.5em;
 }
 
-.skills ul li::before {
+.skills ul li::before,
+#education a::before {
     content: '\25E6';
     font-size: 1.5em;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+/*Add styles to CODE*/
+#code,
+#english {
+    padding: 10px 10px 0;
+}
+
+#code h2,
+.task p {
+    margin-top: 0;
+}
+
+#code h3 {
+    font-size: 1.7em;
+    margin: 20px 0 0;
+}
+
+.task h3 a {
+    display: inline-block;
+    padding: 5px 5px 5px 0;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.task h3 a::after,
+#education a::after {
+    content: url(images/icons/icon_link.png);
+    display: inline-block;
+    height: 30px;
+}
+
+.task h3 a::after {
+    vertical-align: bottom;
+}
+
+.task h3 a:hover {
+    background-color: var(--c-aqua);
+}
+
+.task p {
+    background-color: var(--c-yellow);
+    padding: 3px;
+    border-radius: 3px;
+    outline: 1px solid yellow;
+}
+
+.solution .code-container {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    outline: 2px solid #808080;
+}
+
+.solution code {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+span.darkblue {
+    color: var(--c-darkblue);
+}
+
+span.yellow {
+    color: var(--c-yellow);
+}
+
+span.purple {
+    color: var(--c-purple);
+}
+
+span.lightblue {
+    color: var(--c-lightblue);
+}
+
+span.indent {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*Add styles to EDUCATION*/
+#education {
+    background-color: var(--c-aqua);
+    padding: 10px 10px 0;
+}
+
+#education h2,
+#english h2 {
+    margin-top: 0;
+}
+
+#education ul {
+    margin: 0;
+}
+
+#education a {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#education a:first-child {
+    margin-bottom: 5px;
+}
+
+#education a::after {
+    vertical-align: middle;
+}
+
+#education a:hover {
+    background-color: var(--c-azure);
+    box-shadow: 2px 2px 0 var(--c-lightblue);
+}
+
+/*Add styles to FOOTER*/
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 10px 10px;
+}
+
+footer p a {
+    color: #ffffff;
+    padding: 5px;
+}
+
+.rss {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rss p {
+    margin-bottom: 0;
+}
+
+.rss p {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.github::before {
+    content: url(images/icons/icon_github.png);
+    display: inline-block;
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    outline: 3px solid #ffffff;
+    outline-offset: -1px;
+    vertical-align: middle;
+}
+
+.rolling-scope-school::before {
+    content: url(images/icons/favicon_RS.ico);
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 30px;
+    outline: 3px solid #ffffff;
+    outline-offset: -1px;
+    vertical-align: middle;
+}
+
+.rss p:nth-child(2),
+.rss p:nth-child(3) {
+    transition: .3s;
+}
+
+.rss p:nth-child(2):hover,
+.rss p:nth-child(3):hover {
+    border-radius: 5px;
+    outline: 2px solid #ffffff;
+    outline-offset: 5px;
 }
