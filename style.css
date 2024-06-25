@@ -371,6 +371,7 @@ footer{
 
 footer p a {
     color: #ffffff;
+    text-align: center;
     padding: 5px;
 }
 
@@ -408,7 +409,7 @@ footer p a {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    margin-right: 30px;
+    margin-right: 5px;
     outline: 3px solid #ffffff;
     outline-offset: -1px;
     vertical-align: middle;
@@ -424,4 +425,11 @@ footer p a {
     border-radius: 5px;
     outline: 2px solid #ffffff;
     outline-offset: 5px;
+}
+
+@media screen  and (max-width: 775px) {
+    .rss {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
