@@ -1,5 +1,6 @@
 :root {
     --c-aqua: #99fbfb;
+    --c-azure: #f0ffff;
     --c-darkblue: #569cd6;
     --c-yellow: #dcdc9d;
     --c-purple: #c586c0;
@@ -16,7 +17,7 @@ body {
 }
 
 header {
-    background-color: azure;
+    background-color: var(--c-azure);
     padding: 10px;
 }
 
@@ -142,7 +143,7 @@ ul.navigation li a:hover::after {
 }
 
 #contacts div:hover {
-    background-color: azure;
+    background-color: var(--c-azure);
     box-shadow: 2px 2px 0 var(--c-aqua);
 }
 
@@ -236,7 +237,8 @@ h2 span::after {
     font-size: 1.5em;
 }
 
-.skills ul li::before {
+.skills ul li::before,
+#education a::before {
     content: '\25E6';
     font-size: 1.5em;
     vertical-align: middle;
@@ -265,10 +267,14 @@ h2 span::after {
     transition: .3s;
 }
 
-.task h3 a::after {
+.task h3 a::after,
+#education a::after {
     content: url(images/icons/icon_link.png);
     display: inline-block;
     height: 30px;
+}
+
+.task h3 a::after {
     vertical-align: bottom;
 }
 
@@ -313,4 +319,36 @@ span.lightblue {
 span.indent {
     display: inline-block;
     margin-left: 20px;
+}
+
+/*Add styles to EDUCATION*/
+#education {
+    background-color: var(--c-aqua);
+    padding: 10px 10px 0;
+}
+
+#education h2 {
+    margin-top: 0;
+}
+
+#education a {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#education a:first-child {
+    margin-bottom: 5px;
+}
+
+#education a::after {
+    vertical-align: middle;
+}
+
+#education a:hover {
+    background-color: var(--c-azure);
+    box-shadow: 2px 2px 0 var(--c-lightblue);
 }
