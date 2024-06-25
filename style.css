@@ -246,7 +246,8 @@ h2 span::after {
 }
 
 /*Add styles to CODE*/
-#code {
+#code,
+#english {
     padding: 10px 10px 0;
 }
 
@@ -327,8 +328,13 @@ span.indent {
     padding: 10px 10px 0;
 }
 
-#education h2 {
+#education h2,
+#english h2 {
     margin-top: 0;
+}
+
+#education ul {
+    margin: 0;
 }
 
 #education a {
@@ -352,3 +358,5 @@ span.indent {
     background-color: var(--c-azure);
     box-shadow: 2px 2px 0 var(--c-lightblue);
 }
+
+/*Add styles to ENGLISH*/
