@@ -189,7 +189,7 @@ ul.navigation li a:hover::after {
 
 @media screen  and (max-width: 405px) {
     #contacts div a span {
-        display: none;
+        font-size: 5vw;
     }
 }
 
