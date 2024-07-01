@@ -83,7 +83,7 @@ ul.navigation li a::after {
     width: 100%;
     height: 3px;
     opacity: 0;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 ul.navigation li a:hover::after {
@@ -122,7 +122,7 @@ ul.navigation li a:hover::after {
     ul.navigation li a::after {
         width: 50%;
         margin: auto;
-        transition: .3s;
+        transition: 0.3s;
     }
 }
 
@@ -139,7 +139,7 @@ ul.navigation li a:hover::after {
     border: 3px solid var(--c-aqua);
     border-radius: 5px;
     margin-bottom: 5px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 #contacts div:hover {
@@ -189,7 +189,7 @@ ul.navigation li a:hover::after {
 
 @media screen  and (max-width: 405px) {
     #contacts div a span {
-        display: none;
+        font-size: 5vw;
     }
 }
 
@@ -265,12 +265,12 @@ h2 span::after {
     display: inline-block;
     padding: 5px 5px 5px 0;
     border-radius: 3px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .task h3 a::after,
 #education a::after {
-    content: url(images/icons/icon_link.png);
+    content: url("images/icons/icon_link.png");
     display: inline-block;
     height: 30px;
 }
@@ -346,7 +346,7 @@ span.indent {
     font-weight: bold;
     padding: 5px;
     border-radius: 5px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 #education a:first-child {
@@ -371,6 +371,7 @@ footer{
 
 footer p a {
     color: #ffffff;
+    text-align: center;
     padding: 5px;
 }
 
@@ -390,7 +391,7 @@ footer p a {
 }
 
 .github::before {
-    content: url(images/icons/icon_github.png);
+    content: url("images/icons/icon_github.png");
     display: inline-block;
     background-color: #ffffff;
     width: 30px;
@@ -403,12 +404,12 @@ footer p a {
 }
 
 .rolling-scope-school::before {
-    content: url(images/icons/favicon_RS.ico);
+    content: url("images/icons/favicon_RS.ico");
     display: inline-block;
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    margin-right: 30px;
+    margin-right: 5px;
     outline: 3px solid #ffffff;
     outline-offset: -1px;
     vertical-align: middle;
@@ -416,7 +417,7 @@ footer p a {
 
 .rss p:nth-child(2),
 .rss p:nth-child(3) {
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .rss p:nth-child(2):hover,
@@ -424,4 +425,11 @@ footer p a {
     border-radius: 5px;
     outline: 2px solid #ffffff;
     outline-offset: 5px;
+}
+
+@media screen  and (max-width: 775px) {
+    .rss {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
