@@ -187,12 +187,6 @@ ul.navigation li a:hover::after {
     }
 }
 
-@media screen  and (max-width: 405px) {
-    #contacts div a span {
-        font-size: 5vw;
-    }
-}
-
 /*Add about me*/
 #about {
     background-color: var(--c-aqua);
@@ -269,10 +263,15 @@ h2 span::after {
 }
 
 .task h3 a::after,
-#education a::after {
+#education a::after,
+a.shelter::after {
     content: url("images/icons/icon_link.png");
     display: inline-block;
     height: 30px;
+}
+
+a.shelter::after {
+    margin-left: 5px;
 }
 
 .task h3 a::after {
@@ -325,6 +324,17 @@ span.indent {
     margin-left: 20px;
 }
 
+a.shelter {
+    display: flex;
+    align-items: center;
+    background: var(--c-aqua);
+    width: 305px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
 /*Add styles to EDUCATION*/
 #education {
     background-color: var(--c-aqua);
@@ -357,7 +367,8 @@ span.indent {
     vertical-align: middle;
 }
 
-#education a:hover {
+#education a:hover,
+a.shelter:hover {
     background-color: var(--c-azure);
     box-shadow: 2px 2px 0 var(--c-lightblue);
 }
@@ -426,6 +437,17 @@ footer p a {
     outline: 2px solid #ffffff;
     outline-offset: 5px;
 }
+
+@media screen  and (max-width: 405px) {
+    #contacts div a span {
+        font-size: 5vw;
+    }
+
+    a.shelter {
+        width: 92vw;
+    }
+}
+
 
 @media screen  and (max-width: 775px) {
     .rss {
