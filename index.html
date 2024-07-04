@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icons/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <div class="container-photo-name">
+            <div class="photo">
+                <img src="images/pavel_barysevich-bleyaniuk.jpg" alt="photo of Pavel Barysevich-Bleyaniuk">
+            </div>
+            <h1>Pavel Barysevich-Bleyaniuk</h1>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#about">About&nbsp;me</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#english">English</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="contacts">
+            <div>
+                <a href="https://t.me/blejaniuk" target="_blank">
+                    <img src="images/icons/Telegram_Messenger.png" alt="telegram">
+                    <span>@blejaniuk</span>
+                </a>
+            </div>
+            <div>
+                <a href="https://discordapp.com/users/859178219180392448/" target="_blank">
+                    <img src="images/icons/icon_discord.png" alt="discord">
+                    <span>paviel3730</span>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/Paviel-Barysevich" target="_blank">
+                    <img src="images/icons/icon_github.png" alt="github">
+                    <span>Paviel-Barysevich</span>
+                </a>
+            </div>
+            <div>
+                <a href="mailto:pavelmessage@gmail.com">
+                    <img src="images/icons/icon_gmail.png" alt="e-mail">
+                    <span>pavelmessage@gmail.com</span>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/pavel-barysevich/" target="_blank">
+                    <img src="images/icons/icon_linkedin.png" alt="linkedin">
+                    <span>Pavel Barysevich-Bleyaniuk</span>
+                </a>
+            </div>
+        </div>
+        <div id="about">
+            <div>
+                <p class="about-me">I like learning and finding out something new. My goal is to become a software engineer. I want to get new experience in developing software products.</p>
+            </div>
+            <div class="skills">
+                <h2><span>My hard skills:</span></h2>
+                <ul>
+                    <li>Java Script;</li>
+                    <li>HTML / CSS;</li>
+                    <li>Git;</li>
+                    <li>Dev-tools, Visual Studio Code.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="code">
+            <h2><span>Code example</span></h2>
+            <div class="task">
+                <h3><a href="https://www.codewars.com/kata/5a946d9fba1bb5135100007c" target="_blank">Task :</a></h3>
+                <p><i>Given a List [ ] of n integers , find minimum number to be inserted in a list, so that sum of all elements of list should equal the closest prime number.</i></p>
+            </div>
+            <div class="solution">
+                <h3>Solution:</h3>
+                <div class="code-container">
+                    <code>
+                        <span class="darkblue">function</span> <span class="yellow">minimumNumber</span>(<span class="lightblue">numbers</span>){<br>
+                            <span class="darkblue">let</span> <span class="lightblue">sum</span> = <span class="lightblue">numbers</span>.<span class="yellow">reduce</span>((<span class="lightblue">acc</span>, <span class="lightblue">number</span>) =&gt; <span class="lightblue">acc</span> + <span class="lightblue">number</span>, 0);<br>
+                            <span class="darkblue">let</span> <span class="lightblue">isPrime</span> = <span class="lightblue">sum</span>;<br>
+                            <br>
+                                <span class="indent">outer:<br>
+                                        <span class="purple">for</span> (<span class="darkblue">let</span> <span class="lightblue">i</span> = 2; <span class="lightblue">i</span> &lt;= <span class="lightblue">isPrime</span> ** (1 / 2); <span class="lightblue">i</span>++) {<br>
+                                        <span class="purple">if</span> (<span class="lightblue">isPrime</span> % <span class="lightblue">i</span> === 0) {<br>
+                                    <span class="indent"><span class="lightblue">isPrime</span>++;<br>
+                                        <span class="lightblue">i</span> = 1;<br>
+                                        <span class="purple">continue</span> outer;<br>
+                                        } <span class="purple">else</span> {<br>
+                                        <span class="purple">continue</span>;<br>
+                                    }</span><br>
+                                }</span><br>
+                            <br>
+                            <span class="purple">return</span> <span class="lightblue">isPrime</span> - <span class="lightblue">sum</span>;<br>
+                          }<br>
+                    </code>
+                </div>
+            </div>
+            <hr>
+            <a href="https://rolling-scopes-school.github.io/paviel-barysevich-JSFEPRESCHOOL2024Q2/shelter/main/" class="shelter">
+                <img src="images/icons/icon-cat-and-dog-shelter.png" alt="shelter link">&nbsp;Shelter is a project in RS School
+            </a>
+        </div>
+        <div id="education">
+            <h2><span>Education</span></h2>
+            <ul>
+                <li><a href="https://www.ggau.by/" target="_blank">Hrodna State Agrarian University</a></li>
+                <li><a href="https://rs.school/courses/javascript-preschool-ru" target="_blank">RS&nbsp;School</a></li>
+            </ul>
+        </div>
+        <div id="english">
+            <h2><span>English</span></h2>
+            <p><i>Pre-Intermediate.</i></p>
+        </div>
+    </main>
+    <footer>
+        <div class="rss">
+            <p><time datetime="2024">2024</time></p>
+            <p><a href="https://rs.school/" class="rolling-scope-school" target="_blank">The Rolling Scopes School</a></p>
+            <p><a href="https://github.com/Paviel-Barysevich" class="github" target="_blank">Pavel Barysievich-Blejaniuk</a></p>
+        </div>
+    </footer>
+</body>
+</html>
