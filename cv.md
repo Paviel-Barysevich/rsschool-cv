@@ -7,6 +7,10 @@
 
 [![github logo](/rsschool-cv/images/icons/icon_github.png) **Paviel-Barysevich**](https://github.com/Paviel-Barysevich/)
 
+![gmail logo](/rsschool-cv/images/icons/icon_gmail.png) **pavielmessage@gmail.com**
+
+[![linkedin logo](/rsschool-cv/images/icons/icon_linkedin.png) **Paviel-Barysevich**](https://www.linkedin.com/in/pavel-barysevich/)
+
 I like learning and finding out something new. My goal is to become a software engineer. I want to get new experience in developing software products.
 
 ## My hard skills:
@@ -42,6 +46,11 @@ function minimumNumber(numbers){
   return isPrime - sum;
 }
 ```
+
+## My projects
+
+### [Audioplayer](https://rolling-scopes-school.github.io/paviel-barysevich-JSFEPRESCHOOL2024Q2/js30audioplayer) | [Image gallery](https://rolling-scopes-school.github.io/paviel-barysevich-JSFEPRESCHOOL2024Q2/js30imagegallery) | [Minesweeper game](https://rolling-scopes-school.github.io/paviel-barysevich-JSFEPRESCHOOL2024Q2/js30randomgame)
+
 ## Education
 
 * [Hrodna State Agrarian University](https://www.ggau.by/);
@@ -49,4 +58,4 @@ function minimumNumber(numbers){
 
 ## English
 
-_Pre-Intermediate._
+_Intermediate._
