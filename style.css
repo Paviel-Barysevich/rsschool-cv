@@ -134,7 +134,7 @@ ul.navigation li a:hover::after {
     padding: 5px 5px 0;
 }
 
-#contacts div {
+#contacts li {
     box-sizing: border-box;
     border: 3px solid var(--c-aqua);
     border-radius: 5px;
@@ -142,27 +142,27 @@ ul.navigation li a:hover::after {
     transition: 0.5s;
 }
 
-#contacts div:hover {
+#contacts li:hover {
     background-color: var(--c-azure);
     box-shadow: 2px 2px 0 var(--c-aqua);
 }
 
-#contacts div:nth-child(odd) {
+#contacts li:nth-child(odd) {
     width: 50%;
     margin-right: 5px;
 }
 
-#contacts div:nth-child(even) {
+#contacts li:nth-child(even) {
     width: calc(50% - 5px); /*5px is margin-right from #contacts div:nth-child(odd)*/
 }
 
-#contacts div a {
+#contacts li a {
     display: flex;
     align-items: center;
     padding: 20px 10px;
 }
 
-#contacts div a span {
+#contacts li a span {
     font-weight: bold;
     font-size: 1.5em;
     margin-left: 5px;
@@ -173,16 +173,16 @@ ul.navigation li a:hover::after {
         flex-direction: column;
     }
 
-    #contacts div:nth-child(even) {
+    #contacts li:nth-child(even) {
         width: 100%;
     }
 
-    #contacts div:nth-child(odd) {
+    #contacts li:nth-child(odd) {
         width: 100%;
         margin-right: 0;
     }
 
-    #contacts div a {
+    #contacts li a {
         justify-content: center;
     }
 }
@@ -264,14 +264,15 @@ h2 span::after {
 
 .task h3 a::after,
 #education a::after,
-a.shelter::after {
+a.project::after {
     content: url("images/icons/icon_link.png");
     display: inline-block;
     height: 30px;
 }
 
-a.shelter::after {
+a.project::after {
     margin-left: 5px;
+    align-self: flex-end;
 }
 
 .task h3 a::after {
@@ -324,15 +325,20 @@ span.indent {
     margin-left: 20px;
 }
 
-a.shelter {
-    display: flex;
-    align-items: center;
+a.project {
+    display: inline-flex;
+    justify-content: space-between;
     background: var(--c-aqua);
     width: 305px;
+    height: 100px;
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 10px;
     transition: 0.3s;
+}
+
+a.project > span {
+    align-self: center;
 }
 
 /*Add styles to EDUCATION*/
@@ -368,7 +374,7 @@ a.shelter {
 }
 
 #education a:hover,
-a.shelter:hover {
+a.project:hover {
     background-color: var(--c-azure);
     box-shadow: 2px 2px 0 var(--c-lightblue);
 }
@@ -438,20 +444,25 @@ footer p a {
     outline-offset: 5px;
 }
 
-@media screen  and (max-width: 405px) {
-    #contacts div a span {
-        font-size: 5vw;
-    }
-
-    a.shelter {
-        width: 92vw;
-    }
-}
-
-
 @media screen  and (max-width: 775px) {
     .rss {
         flex-direction: column-reverse;
         align-items: center;
+    }
+}
+
+@media screen  and (max-width: 660px) {
+    a.project {
+        width: max(90vw);
+    }
+}
+
+@media screen  and (max-width: 405px) {
+    #contacts li a span {
+        font-size: 5vw;
+    }
+
+    #education > ul {
+        padding-left: 25px;
     }
 }
