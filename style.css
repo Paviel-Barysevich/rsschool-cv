@@ -134,7 +134,7 @@ ul.navigation li a:hover::after {
     padding: 5px 5px 0;
 }
 
-#contacts div {
+#contacts li {
     box-sizing: border-box;
     border: 3px solid var(--c-aqua);
     border-radius: 5px;
@@ -142,27 +142,27 @@ ul.navigation li a:hover::after {
     transition: 0.5s;
 }
 
-#contacts div:hover {
+#contacts li:hover {
     background-color: var(--c-azure);
     box-shadow: 2px 2px 0 var(--c-aqua);
 }
 
-#contacts div:nth-child(odd) {
+#contacts li:nth-child(odd) {
     width: 50%;
     margin-right: 5px;
 }
 
-#contacts div:nth-child(even) {
+#contacts li:nth-child(even) {
     width: calc(50% - 5px); /*5px is margin-right from #contacts div:nth-child(odd)*/
 }
 
-#contacts div a {
+#contacts li a {
     display: flex;
     align-items: center;
     padding: 20px 10px;
 }
 
-#contacts div a span {
+#contacts li a span {
     font-weight: bold;
     font-size: 1.5em;
     margin-left: 5px;
@@ -173,16 +173,16 @@ ul.navigation li a:hover::after {
         flex-direction: column;
     }
 
-    #contacts div:nth-child(even) {
+    #contacts li:nth-child(even) {
         width: 100%;
     }
 
-    #contacts div:nth-child(odd) {
+    #contacts li:nth-child(odd) {
         width: 100%;
         margin-right: 0;
     }
 
-    #contacts div a {
+    #contacts li a {
         justify-content: center;
     }
 }
@@ -458,7 +458,7 @@ footer p a {
 }
 
 @media screen  and (max-width: 405px) {
-    #contacts div a span {
+    #contacts li a span {
         font-size: 5vw;
     }
 
